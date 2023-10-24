@@ -2,7 +2,7 @@ name: Repo. 생성 요청
 description: 신규 repository 생성 요청 양식
 title: "[New repo.]: "
 labels: ["help wanted"]
-projects: ["projects/9"]
+projects: ["orgs/good-fellas-tech/projects/9"]
 body:
   - type: input
     id: name
