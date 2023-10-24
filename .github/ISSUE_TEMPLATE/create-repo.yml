@@ -11,12 +11,12 @@ body:
       placeholder: ex. domain-system-type
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: desc
     attributes:
       label: 설명
       description: 신규 repository에 대한 간략한 설명
-      placeholder: domain에서 system 기능을 하는 type 애플리케이션
+      placeholder: ex. domain에서 system 기능을 하는 type 애플리케이션
     validations:
       required: false
   - type: checkboxes
@@ -31,3 +31,10 @@ body:
           required: false
         - label: Java 애플리케이션 템플릿 사용
           required: false
+  - type: textarea
+    id: etc
+    attributes:
+      label: 기타 사항
+      description: 신규 repository와 관련하여 필요한 기타 요청 및 문의 사항
+    validations:
+      required: false
