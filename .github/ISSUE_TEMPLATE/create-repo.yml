@@ -1,0 +1,33 @@
+name: Repo. 생성 요청
+description: 신규 repository 생성 요청 양식
+title: "[New repo.]: "
+labels: ["help wnated"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 이름
+      description: 신규 repository 이름
+      placeholder: ex. domain-system-type
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: 설명
+      description: 신규 repository에 대한 간략한 설명
+      placeholder: domain에서 system 기능을 하는 type 애플리케이션
+    validations:
+      required: false
+  - type: checkboxes
+    id: options
+    attributes:
+      label: 추가 요청 사항
+      description: 신규 repository와 관련하여 애플리케이션 개발에 필요한 추가 요청 사항
+      options:
+        - label: Deploy repo. 사용
+          required: false
+        - label: ECR 사용
+          required: false
+        - label: Java 애플리케이션 템플릿 사용
+          required: false
